@@ -9,4 +9,4 @@ Worked on my UI skills and also killed a lot of time. All the projects mentioned
 
 * Third Project **M-Admin** --> An Admin Area Interface with Graph, Todos, Posts, Users, Comments. <a href="https://yashas.pythonanywhere.com/madmin" target="_blank">Live Link</a>
 
-* Second Project **BizLand** --> A Business Securing Company's Landing Page <a href="https://yashas.pythonanywhere.com/bizland" target="_blank">Live Link</a>
+* Second Project **BizLand** --> A Business Securing Company's Landing Page. <a href="https://yashas.pythonanywhere.com/bizland" target="_blank">Live Link</a>
