@@ -3,7 +3,7 @@ Worked on my UI skills and also killed a lot of time. All the projects mentioned
 
 *Brad Traversy's MaterializeCSS Course... Kinda old but still got some juice.*
 
-* First Project **TravelVille** --> A Travel Agency Website with pretty pictures all over. <a href="https://yashas.pythonanywhere.com/travelvilla" target="_blank">Live Link</a>
+* First Project **TravelVille** --> A Travel Agency Website with pretty pictures all over. <a href="https://yashas.pythonanywhere.com/travelville" target="_blank">Live Link</a>
 
 * Second Project **Quazzu** --> A Code-Hosting website's Landing Page **"For Developers, By Developers"**. <a href="https://yashas.pythonanywhere.com/quazzu" target="_blank">Live Link</a>
 
