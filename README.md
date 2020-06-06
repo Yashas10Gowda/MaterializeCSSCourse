@@ -3,6 +3,9 @@ Worked on my UI skills and also killed a lot of time. All the projects mentioned
 
 *Brad Traversy's MaterializeCSS Course... Kinda old but still got some juice.*
 
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 * First Project **TravelVille** --> A Travel agency website with pretty pictures all over. <a href="https://yashas.pythonanywhere.com/travelvilla" target="_blank">View Project</a>
 
 * Second Project **Quazzu** --> A Code-Hosting website's Landing Page **"For Developers, By Developers"**. <a href="https://yashas.pythonanywhere.com/quazzu" target="_blank">View Project</a>
