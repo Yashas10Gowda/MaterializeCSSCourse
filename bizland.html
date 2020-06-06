@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BizLand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: 'Bad Script', cursive;
+        }
+
+        .primary-overlay {
+            background: rgba(63, 57, 77, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .main-header {
+            background: url('https://i.pinimg.com/originals/02/ee/12/02ee12a581ff5154e07dc22959309086.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            min-height: 600px;
+            color: white;
+            position: relative;
+        }
+
+        .main-header .showcase {
+            padding-top: 110px;
+        }
+
+        .main-text h5 {
+            animation-name: opaq;
+            animation-duration: 1s;
+        }
+
+        .main-text h1 {
+            animation-name: opaq;
+            animation-duration: 2s;
+        }
+
+        .main-text p {
+            animation-name: opaq;
+            animation-duration: 3s;
+        }
+
+        @keyframes opaq {
+            0% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .section-boxes .row .col {
+            padding-top: 8%;
+            padding-bottom: 4%;
+            position: relative;
+        }
+
+        .section-boxes .row .col span {
+            font-size: 80px;
+        }
+
+        .m {
+            position: relative;
+            top: 6px;
+        }
+
+        .input-field input:focus {
+            border-bottom: 1px solid #37474f !important;
+            box-shadow: 0 1px 0 0 #37474f !important;
+        }
+
+        .input-field label {
+            color: #37474f !important;
+        }
+
+        #googlemap {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="primary-overlay">
+            <div class="navbar-fixed">
+                <nav class="transparent">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#home" class="brand-logo">BizLand</a>
+                            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><span
+                                    class="material-icons m">menu</span></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#testi">Testtimonials</a></li>
+                                <li><a href="#con">Contact</a></li>
+                                <li><a href="#" class="btn blue">Download</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <ul id="mobile-nav" class="sidenav">
+                <h4 class="blue-grey-text darken-3 center">BizLand</h4>
+                <li>
+                    <div class="divider"></div>div>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testi">Testimonials</a></li>
+                <li><a href="#con">Contact</a></li>
+                <li><a href="#" class="btn blue">Download</a></li>
+            </ul>
+            <div id="home" class="showcase container scrollspy">
+                <div class="row">
+                    <div class="col s12 main-text">
+                        <h5>You found the...</h5>
+                        <h1>Right Place To Start</h1>
+                        <p class="flow-text">To take your business to the next level with our services that have taken
+                            companies to the fortune 500</p>
+                        <a href="#about" class="btn btn-large white black-text">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-boxes center">
+        <div class="row">
+            <div class="col s12 m6 l3 blue white-text">
+                <span class="material-icons">shop</span>
+                <h4>Grow Your Buisness</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, itaque eius sint sapiente
+                    repellendus dolorem exercitationem labore delectus iure natus.</p>
+            </div>
+            <div class="col s12 m6 l3 teal white-text">
+                <span class="material-icons">group</span>
+                <h4>Professional Advisors</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, itaque eius sint sapiente
+                    repellendus dolorem exercitationem labore delectus iure natus.</p>
+            </div>
+            <div class="col s12 m6 l3 red white-text">
+                <span class="material-icons">vpn_key</span>
+                <h4>Secure Your Buisness</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, itaque eius sint sapiente
+                    repellendus dolorem exercitationem labore delectus iure natus.</p>
+            </div>
+            <div class="col s12 m6 l3 amber white-text">
+                <span class="material-icons">trending_up</span>
+                <h4>Seek Profit</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, itaque eius sint sapiente
+                    repellendus dolorem exercitationem labore delectus iure natus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-about center blue-grey-text text-darken-3 scrollspy">
+        <h2>About BizLand</h2>
+        <p class="container flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, minus et?
+            Accusamus ipsum ex
+            architecto quidem dignissimos placeat unde adipisci voluptatum doloremque, vero nisi autem
+            inventore
+            reiciendis? Aut consequuntur neque blanditiis dolor beatae commodi saepe nam similique eum
+            ducimus.
+            Deserunt!</p>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <img src="https://lh3.googleusercontent.com/proxy/MdiNs5xrNpQxR1JWVnT1XKZ1DaYipqhMbOc4CMvTgvfb8dCpgqIQG36_9N7CKlbdNzpUI67pWMFFdXZETYguKoWqzFz0ZvYWL4bcC1xrU6ZnQfCPGDXzjT-DX6WAeEo"
+                        alt="" class="responsive-img circle">
+                </div>
+                <div class="col s12 m4 offset-m2">
+                    <ul class="collection">
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Business
+                            Consultation</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Security
+                            Services</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Financial
+                            Analytics</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Marketing and
+                            Advertising</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Accounting</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>Digital
+                            Presence</li>
+                        <li class="collection-item"><span class="material-icons left">done_outline</span>And a Whole Lot
+                            Other</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testi" class="section section-testimonials blue scrollspy">
+        <div class="container white-text center">
+            <h2>What Our Clients Say</h2>
+            <div class="row">
+                <div class="col s12 m4 center blue-grey-text text-darken-3">
+                    <div class="card-panel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores
+                        molestiae pariatur dolores
+                        molestias quasi.
+                        <hr>
+                        John Doe from ABC
+                    </div>
+                </div>
+                <div class="col s12 m4 center blue-grey-text text-darken-3">
+                    <div class="card-panel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores
+                        molestiae pariatur dolores
+                        molestias quasi.
+                        <hr>
+                        Dan the Man from FoxLife
+                    </div>
+                </div>
+                <div class="col s12 m4 center blue-grey-text text-darken-3">
+                    <div class="card-panel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores
+                        molestiae pariatur dolores
+                        molestias quasi.
+                        <hr>
+                        Philips from Philips Elec.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="con" class="section section-contact scrollspy"
+        style="background-image: url('https://3d.bk.tudelft.nl/ken/img/blog/new-york-google.png')">
+        <div class="container">
+            <div class="row"><span style="font-size: 80px;" class="material-icons blue-text">
+                    place
+                </span>
+                <div class="col offset-m8 s12 m4 center card-panel">
+
+                    <h5>Contact Us</h5>
+                    <form>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="text">
+                            <label for="email">Company Name</label>
+                        </div>
+                        <button type="submit" class="btn blue-grey darken-3">Submit</button>
+                        <p></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-copyright blue-grey darken-3 white-text center">
+        BizLand Copyright 2020-2030
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.scrollspy').scrollSpy();
+        })
+
+        document.addEventListener('scroll', () => document.querySelector('nav').className = pageYOffset >= 600 ? 'blue-grey darken-3' : 'transparent')
+    </script>
+</body>
+
+</html>

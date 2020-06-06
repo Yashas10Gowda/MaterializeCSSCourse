@@ -1,0 +1,491 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Quazzu</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        .main-header {
+            background-image: url('https://techgirlkb.guru/wp-content/uploads/2018/07/pexels-photo-755726-1.jpeg');
+            min-height: 450px;
+        }
+
+        .material-icons {
+            padding-top: 20px;
+        }
+
+        .hide-on-med-and-down .white-text {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .sidenav li a {
+            font-size: 20px;
+        }
+
+        .right .white-text:hover {
+            background-color: white;
+            color: #311b92 !important;
+        }
+
+        .text-darken-4 .material-icons {
+            font-size: 20px;
+            position: relative;
+            top: 3px;
+        }
+
+        .showcase h5 {
+            padding-top: 40px;
+        }
+
+        .showcase .white {
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card-panel .material-icons {
+            font-size: 90px;
+        }
+
+        .input-field input:focus+label {
+            color: #311b92 !important;
+        }
+
+        .input-field input:focus {
+            border-bottom: 1px solid #311b92 !important;
+            box-shadow: 0 1px 0 0 #311b92 !important;
+        }
+
+        .he {
+            font-size: 30px;
+            position: relative;
+            top: 7px;
+            color: #311b92
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="homei">
+        <header class="main-header">
+            <nav class="transparent">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Quazzu</a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-nav"><span class="material-icons">
+                                menu
+                            </span></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="quazzu.html" class="white-text">Home</a></li>
+                            <li><a href="#" class="white-text sb">Solutions</a></li>
+                            <li><a href="#signupmodal" class="white-text modal-trigger">Signup</a></li>
+                            <li><a href="#loginmodal" class="white-text modal-trigger">Login</a></li>
+                            <li><a href="https://m.facebook.com"><span class="material-icons">
+                                        face
+                                    </span></a></li>
+                            <li><a href="https://www.twitter.com"><span class="material-icons">
+                                        article
+                                    </span></a></li>
+                            <li><a href="https://www.instagram.com"><span class="material-icons">
+                                        loyalty
+                                    </span></a></li>
+                        </ul>
+                        <ul class="sidenav" id="mobile-nav">
+                            <h4 class="deep-purple-text text-darken-4 center">
+                                Quazzu</h4>
+                            <p></p>
+                            <li><a href="quazzu.html" class="deep-purple-text text-darken-4"><span
+                                        class="material-icons">
+                                        home
+                                    </span> Home</a></li>
+                            <li><a href="#" class="deep-purple-text text-darken-4 sb"><span class="material-icons">
+                                        work
+                                    </span> Solutions</a></li>
+                            <li><a href="#signupmodal" class="deep-purple-text text-darken-4 modal-trigger"><span
+                                        class="material-icons">
+                                        person_add
+                                    </span> Signup</a></li>
+                            <li><a href="#loginmodal" class="deep-purple-text text-darken-4 modal-trigger"><span
+                                        class="material-icons">
+                                        login
+                                    </span> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="showcase container center white-text">
+                <h5>Welcome to QUAZZU</h5>
+                <h2>Build For The Future</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, voluptas.</p>
+                <a href="#signupmodal" class="white modal-trigger deep-purple-text text-darken-4"><span
+                        class="material-icons">
+                        person_add
+                    </span> Signup</a>
+                <a href="#loginmodal" class="white deep-purple-text text-darken-4 modal-trigger"><span
+                        class="material-icons">
+                        login
+                    </span> Login</a>
+            </div>
+
+        </header>
+
+        <section class="section section-icons center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card-panel deep-purple-text text-darken-4">
+                            <span class="material-icons">
+                                person
+                            </span>
+                            <h5>Free Account</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card-panel deep-purple-text text-darken-4">
+                            <span class="material-icons">
+                                storage
+                            </span>
+                            <h5>NoSQL Database</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card-panel deep-purple-text text-darken-4">
+                            <span class="material-icons">
+                                flash_on
+                            </span>
+                            <h5>Fast Connect</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-about center deep-purple-text text-darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, possimus quisquam.
+                            Necessitatibus
+                            architecto iure quibusdam explicabo quos ab mollitia veritatis! Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Recusandae, eos.</p>
+                    </div>
+                    <div class="col s12 m6">
+                        <img class="circle responsive-img"
+                            src="https://media-exp1.licdn.com/dms/image/C5612AQGzrjk77GbNag/article-cover_image-shrink_720_1280/0?e=1595462400&v=beta&t=IMCiDhqotLvIL1NfgRYLuEeRJrqxtKFLErtNPHFXxVI"
+                            alt="https://lh3.googleusercontent.com/proxy/q6zjrRKvF-V7wL-BY8J2lHfieUwRoqlYU5Q4HSVZ_CfcFnEH_mW0Km5g5N69DovYNQmqsX82_pt66tcRUPjJ-8fNezByD1psjadhvJVu6bF_oWCwSMLC9JqDVRb07ZImrWUx0Lwv1lKjb7Op2G7fHdurOHehodJJhJ2salc">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-developers">
+            <div class="container">
+                <div class="row" style="padding: 1px;background-color:#311b92;">
+                    <h4 class="white-text center">For Developers, By Developers.</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-languages">
+            <div class="container center">
+                <h4 class="deep-purple-text text-darken-4">Work With Any Language</h4>
+                <br><br>
+                <div class="row">
+                    <div class="col s2"><img
+                            src="https://lh3.googleusercontent.com/proxy/hszQxweixrlZ4amIUr-V912fRdCA58PwR5FG4aAk2-WzbwEqiMBqUnVb9h-eAPQ97HyFqwzlMUVGdvIeLRYf7UB84SRRR2mC4AVP4cA6nUykDD5v4zJqKiZio6MoWqQpZ7tygQyd"
+                            alt="Python" class="responsive-img"></div>
+                    <div class="col s2"><img
+                            src="https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png"
+                            alt="NodeJS" class="responsive-img"></div>
+                    <div class="col s2"><img src="https://cdn0.iconfinder.com/data/icons/game-2-2/50/120-512.png"
+                            alt="Ruby" class="responsive-img"></div>
+                    <div class="col s2"><img
+                            src="https://cdn3.iconfinder.com/data/icons/programming-16/512/programming_00001-2-512.png"
+                            alt="C#" class="responsive-img"></div>
+                    <div class="col s2"><img
+                            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/256_Php_logo-512.png"
+                            alt="PHP" class="responsive-img"></div>
+                    <div class="col s2"><img src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png"
+                            alt="JAVA" class="responsive-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-podcast">
+            <div class="container">
+                <div class="row" style="margin-top: 20px;padding: 1px;background-color:#311b92;">
+                    <h4 class="white-text center">To listen to Our (Quazzu) Podcast, <small style="font-size: 15px;"><a
+                                class="white-text" href="#">Tap Here.</a></small></h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-carosel">
+            <div class="container deep-purple-text text-darken-4 center">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="carousel carousel-slider">
+                            <div class="carousel-item left-align" href="#one!">
+                                <h2>Testimonial-1</h2>
+                                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                    minima impedit cumque corporis aliquid quibusdam facilis esse voluptas nisi nam!
+                                    Eos,
+                                    aperiam id. Alias, aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dignissimos recusandae voluptates ad minima voluptatem et.</p> <em
+                                    class="right">~Quazzu
+                                    User-1 from PrayaTheCompany</em>
+                            </div>
+                            <div class="carousel-item left-align" href="#two!">
+                                <h2>Testimonial-2</h2>
+                                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                    minima impedit cumque corporis aliquid quibusdam facilis esse voluptas nisi nam!
+                                    Eos,
+                                    aperiam id. Alias, aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dignissimos recusandae voluptates ad minima voluptatem et.</p> <em
+                                    class="right">~Quazzu
+                                    User-2 from MoonSystems</em>
+                            </div>
+                            <div class="carousel-item left-align" href="#three!">
+                                <h2>Testimonial-3</h2>
+                                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                    minima impedit cumque corporis aliquid quibusdam facilis esse voluptas nisi nam!
+                                    Eos,
+                                    aperiam id. Alias, aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dignissimos recusandae voluptates ad minima voluptatem et.</p> <em
+                                    class="right">~Quazzu
+                                    User-3 from SunSystems</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="loginmodal" class="modal">
+            <div class="modal-content deep-purple-text text-darken-4">
+                <h4>Account Login</h4>
+                <p>Login to access your account dashboard.</p>
+                <br>
+                <form>
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                    <button class="btn deep-purple darken-4" type="submit">Login</button>
+                    <button class="btn grey darken-1" type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="signupmodal" class="modal">
+            <div class="modal-content deep-purple-text text-darken-4">
+                <h4>SignUp</h4>
+                <p>Create a quazzu account to get your free tier.</p>
+                <br>
+                <form>
+                    <div class="input-field col s12">
+                        <input id="fn" type="text" class="validate">
+                        <label for="fn">First Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="ln" type="text" class="validate">
+                        <label for="ln">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="c" type="text" class="validate">
+                        <label for="c">Comapany</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="passwordc" type="password" class="validate">
+                        <label for="passwordc">Confirm Password</label>
+                    </div>
+                    <button class="btn deep-purple darken-4" type="submit">Signup</button>
+                    <button class="btn grey darken-1" type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-copyright deep-purple darken-4 white-text center">
+            <div style="font-family: sans-serif;" class="container">
+                Quazzu &copy; 2020-2030
+            </div>
+        </div>
+
+    </div>
+
+    <div class="soli">
+        <header class="main-header">
+            <nav class="transparent">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Quazzu</a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-nav"><span class="material-icons">
+                                menu
+                            </span></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#" class="white-text hb">Home</a></li>
+                        </ul>
+                        <ul class="sidenav" id="mobile-nav">
+                            <h4 class="deep-purple-text text-darken-4 center">
+                                Quazzu</h4>
+                            <p></p>
+                            <li><a href="quazzu.html" class="deep-purple-text text-darken-4 hb"><span
+                                        class="material-icons">
+                                        home
+                                    </span> Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="showcase container center white-text">
+                <h5>Welcome to QUAZZU Cloud Hosting Solutions.</h5>
+                <h2>Get Started, Get Involved</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, voluptas.</p>
+            </div>
+
+        </header>
+
+        <section class="section section-about deep-purple-text text-darken-4 center">
+            <div class="container">
+                <div class="row">
+                    <h3>What We Do!?</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, possimus quisquam.
+                        Necessitatibus
+                        architecto iure quibusdam explicabo quos ab mollitia veritatis! Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Recusandae, eos. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Fuga obcaecati eaque cumque aliquid eveniet, at animi deserunt, consectetur
+                        perferendis expedita ut dolor quaerat mollitia facilis iure rem laboriosam molestiae cum?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatibus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-noth grey lighten-2">
+            <div class="container">
+                <h3 class="center deep-purple-text text-darken-4">Powerful And Innovative</h3>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                group_add
+                            </span> Unlimited User</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate aspernatur. Veniam aperiam perferendis ut beatae.</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                trending_up
+                            </span> Scalable Data</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate
+                            aspernatur. Veniam aperiam perferendis ut beatae.</p>
+
+                    </div>
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                analytics
+                            </span> Data Analytics</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate
+                            aspernatur. Veniam aperiam perferendis ut beatae.</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                call_merge
+                            </span> Git-Integration</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate aspernatur. Veniam aperiam perferendis ut beatae.</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                add_box
+                            </span> Add-Ons</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate aspernatur. Veniam aperiam perferendis ut beatae.</p>
+                    </div>
+                    <div class="col s12 m4">
+                        <h5><span class="material-icons he">
+                                storage
+                            </span> Smart Storage</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo, omnis alias
+                            optio voluptate aspernatur. Veniam aperiam perferendis ut beatae.</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="center"><a class="btn deep-purple darken-4 hb" href="#">Go to Home and SignUp</a></div>
+                <br>
+                <h5 class="center deep-purple-text text-darken-4">Have A Question?<span class="black-text"> Contact our
+                        sales team.</span></h5>
+                <p class="center deep-purple-text text-darken-4">salesteam@quazzu.com</p>
+            </div>
+
+        </section>
+
+
+
+        <div class="footer-copyright deep-purple darken-4 white-text center">
+            <div style="font-family: sans-serif;" class="container">
+                Quazzu Solutions &copy; 2020-2030
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        soli = document.querySelector('.soli')
+        homei = document.querySelector('.homei')
+        soli.hidden = true
+        sbs = document.querySelectorAll('.sb')
+        hbs = document.querySelectorAll('.hb')
+        sbs.forEach(sb => {
+            sb.addEventListener('click', () => {
+                soli.hidden = false
+                homei.hidden = true
+            })
+        });
+        hbs.forEach(hb => {
+            hb.addEventListener('click', () => {
+                soli.hidden = true
+                homei.hidden = false
+            })
+        })
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.carousel').carousel({ fullWidth: true, indicators: true });
+            $('.modal-trigger').modal();
+        })
+    </script>
+</body>
+
+</html>

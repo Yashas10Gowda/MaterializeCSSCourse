@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M-Admin</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .m {
+            font-size: 30px;
+            position: relative;
+            top: 10px;
+        }
+
+        .sidenav a {
+            color: #2196f3 !important;
+        }
+
+        .waves-effect.waves-blue .waves-ripple {
+            background-color: rgba(36, 167, 255, 0.65);
+        }
+
+        .card-panel .material-icons {
+            font-size: 60px;
+        }
+
+        .input-field input:focus+label {
+            color: #2196f3 !important;
+        }
+
+        .input-field input[type=text]:focus {
+            border-bottom: 1px solid #2196f3 !important;
+            box-shadow: 0 1px 0 0 #2196f3 !important;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Daily Visitors",
+                    fontColor: '#2196f3'
+                },
+                axisY: {
+                    includeZero: false,
+                    gridColor: 'lightgrey'
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    color: '#2196f3',
+                    dataPoints: [
+                        { y: 852 },
+                        { y: 814 },
+                        { y: 720 },
+                        { y: 1100 },
+                        { y: 250 },
+                        { y: 500 },
+                        { y: 980 },
+                        { y: 480 },
+                        { y: 110 },
+                        { y: 500 },
+                        { y: 280 },
+                        { y: 1110 }
+                    ]
+                }]
+            });
+
+            setTimeout(() => {
+                chart.render();
+            }, 1000)
+
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="blue">
+        <div class="container">
+            <a href="#" class="brand-logo">M-Admin</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><span class="material-icons m">
+                    menu
+                </span></a>
+            <ul class="hide-on-med-and-down right">
+                <li><a class="dashgo" href="#dashboard">Dashboard</a></li>
+                <li><a class="postgo" href="#posts">Posts</a></li>
+                <li><a class="catego" href="#comments">Categories</a></li>
+                <li><a class="usergo" href="#users">Users</a></li>
+                <li><a href="#usermodal" class="modal-trigger"><img
+                            src="https://kongrespsychologiisportu.pl/wp-content/themes/Kongres/images/speakers1.jpg"
+                            alt="https://i0.wp.com/topucto.cz/wp-content/uploads/2018/07/clovek_1.jpg?fit=1000%2C1000&ssl=1&w=640"
+                            style="width: 0.50in; position: absolute; top: 8px; right: 130px;"
+                            class="circle responsive-img" alt=""></a></li>
+                <div id="usermodal" class="modal">
+                    <div class="modal-content blue-text center">
+                        <h5>John Doe</h5>
+                        <a href="#!" class="modal-close blue-text waves-effect waves-blue btn-flat">Settings</a>
+                        <a href="#!" class="modal-close blue-text waves-effect waves-blue btn-flat">Logout</a>
+                    </div>
+                </div>
+            </ul>
+            <ul id="mobile-nav" class="sidenav">
+                <li class="blue">
+                    <div style="margin-left: 30px;" class="white-text">John Doe</div>
+                    <img src="https://kongrespsychologiisportu.pl/wp-content/themes/Kongres/images/speakers1.jpg"
+                        alt="https://i0.wp.com/topucto.cz/wp-content/uploads/2018/07/clovek_1.jpg?fit=1000%2C1000&ssl=1&w=640"
+                        style="width: 1in; position: absolute; top: 10px; left: 100px;" class="circle responsive-img"
+                        alt="">
+                </li>
+                <br>
+                <li><a class="dashgo" href="#dashboard">Dashboard</a></li>
+                <li><a class="postgo" href="#posts">Posts</a></li>
+                <li><a class="catego" href="#comments">Categories</a></li>
+                <li><a class="usergo" href="#users">Users</a></li>
+                <div class="divider"></div>
+                <li><a href="#">Account Controls</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="home">
+
+        <section class="section section-countcards">
+
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center blue-text">
+                        <span class="material-icons">insert_emoticon</span>
+                        <h5>Monthly Visitors</h5>
+                        <h3 class="count">20800</h3>
+                        <div class="progress grey">
+                            <div class="determinate blue" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center blue white-text">
+                        <span class="material-icons">edit</span>
+                        <h5>Blog Posts</h5>
+                        <h3 class="count">208</h3>
+                        <div class="progress grey">
+                            <div class="determinate white" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center blue-text">
+                        <span class="material-icons">comment</span>
+                        <h5>Comments</h5>
+                        <h3 class="count">370</h3>
+                        <div class="progress grey">
+                            <div class="determinate blue" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel center blue white-text">
+                        <span class="material-icons">group</span>
+                        <h5>Users</h5>
+                        <h3 class="count">460</h3>
+                        <div class="progress grey">
+                            <div class="determinate white" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section section-visitors">
+            <div class="row blue">
+                <div class="col s12 m6 l8">
+                    <div class="card-panel">
+                        <div id="chartContainer" style="height: 288px; width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <ul class="collection with-header blue-text">
+                        <li class="collection-item center">
+                            <h5>Latest Comments</h5>
+                        </li>
+                        <li data-position="left" data-tooltip="John Doe" class="collection-item tooltipped">
+                            <img src="https://kongrespsychologiisportu.pl/wp-content/themes/Kongres/images/speakers1.jpg"
+                                alt="https://i0.wp.com/topucto.cz/wp-content/uploads/2018/07/clovek_1.jpg?fit=1000%2C1000&ssl=1&w=640"
+                                style="width: 0.35in; position: absolute; top:27%;" alt=""
+                                class="responsive-img circle">
+                            <span
+                                class="truncate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem
+                                ipsum dolor sit
+                                amet, consectetur
+                                adipisicing elit. Sint,
+                                voluptatem.</span>
+                            <a href="#" onclick="M.toast({html: 'Comment Approved'})"
+                                class="approve green-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approve</a>
+                            <a href="#" onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">&nbsp;Deny</a>
+                        </li>
+                        <li data-position="left" data-tooltip="Bob H" class="collection-item tooltipped">
+                            <img src="https://chrisbusbin.tech/demos/admin/img/person2.jpg"
+                                alt="https://mohsakhtar.github.io/project-materialize-admin-panel/img/person2.jpg"
+                                style="width: 0.35in; position: absolute; top:46%;" alt=""
+                                class="responsive-img circle">
+                            <span
+                                class="truncate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Damn
+                                Lorem</span>
+                            <a href="#" onclick="M.toast({html: 'Comment Approved'})"
+                                class="approve green-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approve</a>
+                            <a href="#" onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">&nbsp;Deny</a>
+                        </li>
+                        <li data-position="left" data-tooltip="Milady" class="collection-item tooltipped">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/81No9ggTM-L._SX522_.jpg"
+                                alt="https://images-na.ssl-images-amazon.com/images/I/81No9ggTM-L._SX679_.jpg"
+                                style="width: 0.35in; position: absolute; top:66%;" alt=""
+                                class="responsive-img circle">
+                            <span
+                                class="truncate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem
+                                is
+                                Hot right.</span>
+                            <a href="#" onclick="M.toast({html: 'Comment Approved'})"
+                                class="approve green-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approve</a>
+                            <a href="#" onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">&nbsp;Deny</a>
+                        </li>
+                        <li data-position="left" data-tooltip="Chad" class="collection-item tooltipped">
+                            <img src="https://gpsites.co/pivot/wp-content/uploads/sites/23/team-3-300x300.jpg"
+                                alt="https://static8.viadeo-static.com/ccOap8b0nybQvNf8blqIgSMMcuE=/300x300/member/0029xa7crzdehdh%3Fts%3D1571912532000"
+                                style="width: 0.35in; position: absolute; top:85%;" alt=""
+                                class="responsive-img circle">
+                            <span
+                                class="truncate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yessss...
+                                IT
+                                IS.</span>
+                            <a href="#" onclick="M.toast({html: 'Comment Approved'})"
+                                class="approve green-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Approve</a>
+                            <a href="#" onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">&nbsp;Deny</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-topo">
+            <div class="row blue blue-text">
+                <div class="col s12 m6 l8">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Recent Posts</div>
+                            <table class="highlight">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Post One</td>
+                                        <td>Web-App Development</td>
+                                        <td><a href="#" class="btn blue white-text">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Two</td>
+                                        <td>Graphic Design</td>
+                                        <td><a href="#" class="btn blue white-text">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Three</td>
+                                        <td>Marketing Audit</td>
+                                        <td><a href="#" class="btn blue white-text">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Quick Todos</span>
+                            <br>
+                            <form>
+                                <div class="input-field">
+                                    <input id="td" type="text">
+                                    <label for="td">Add A Todo...</label>
+                                </div>
+                            </form>
+                            <ul class="collection todoss">
+                                <li class="collection-item">Get the audit done.<span class="material-icons right del">
+                                        remove_circle_outline
+                                    </span></li>
+                                <li class="collection-item">Brush up some SEO skills.<span
+                                        class="material-icons right del">
+                                        remove_circle_outline
+                                    </span></li>
+                                <li class="collection-item">Meet the manager.<span class="material-icons right del">
+                                        remove_circle_outline
+                                    </span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="center p" style="margin-top: 30%;">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container posts blue-text">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Recent Posts</div>
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Date Created</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Post One</td>
+                            <td>Web-App Development</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Post Two</td>
+                            <td>Graphic Design</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Post Three</td>
+                            <td>Marketing Audit</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Post Four</td>
+                            <td>Backend Team Meeting</td>
+                            <td>20-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Post Five</td>
+                            <td>PWA Audit</td>
+                            <td>02-06-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active blue"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large blue modal-trigger" href="#postmodal">
+                <i class="large material-icons white-text">comment</i>
+            </a>
+            <div id="postmodal" class="modal">
+                <div class="modal-content">
+                    <h4>Add Post</h4>
+                    <div class="input-field">
+                        <input placeholder="Title" type="text" name="" id="">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Category" type="text" name="" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container categories blue-text">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Categories</div>
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date Created</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web-App Development</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Design</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Audit</td>
+                            <td>10-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Backend Team Meeting</td>
+                            <td>20-05-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>PWA Audit</td>
+                            <td>02-06-2020</td>
+                            <td><a href="#" class="btn blue white-text">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active blue"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fixed-action-btn">
+            <a href="#catmodal" class="btn-floating btn-large blue modal-trigger">
+                <i class="large material-icons white-text">post_add</i>
+            </a>
+            <div id="catmodal" class="modal">
+                <div class="modal-content">
+                    <h4>Add Category</h4>
+                    <div class="input-field">
+                        <input placeholder="Category" type="text" name="" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container users blue-text">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Users</div>
+                <table class="highlight centered">
+                    <thead>
+                        <tr>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>From</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://kongrespsychologiisportu.pl/wp-content/themes/Kongres/images/speakers1.jpg"
+                                    alt="https://i0.wp.com/topucto.cz/wp-content/uploads/2018/07/clovek_1.jpg?fit=1000%2C1000&ssl=1&w=640"
+                                    style="width: 0.35in; position: absolute; top:31%; left:7%" alt=""
+                                    class="responsive-img circle"></td>
+                            <td>John</td>
+                            <td>jdjd@gmail.com</td>
+                            <td>01/20</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://chrisbusbin.tech/demos/admin/img/person2.jpg"
+                                    alt="https://mohsakhtar.github.io/project-materialize-admin-panel/img/person2.jpg"
+                                    style="width: 0.35in; position: absolute; top:43%; left:7%" alt=""
+                                    class="responsive-img circle"></td>
+                            <td>Bob</td>
+                            <td>bobbyh@gmail.com</td>
+                            <td>05/20</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images-na.ssl-images-amazon.com/images/I/81No9ggTM-L._SX679_.jpg"
+                                    style="width: 0.35in; position: absolute; top:56%; left:7%"
+                                    alt="https://images-na.ssl-images-amazon.com/images/I/81No9ggTM-L._SX522_.jpg"
+                                    class="responsive-img circle"></td>
+                            <td>Milady</td>
+                            <td>lustymi@gmail.com</td>
+                            <td>02/20</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://gpsites.co/pivot/wp-content/uploads/sites/23/team-3-300x300.jpg"
+                                    alt="https://static8.viadeo-static.com/ccOap8b0nybQvNf8blqIgSMMcuE=/300x300/member/0029xa7crzdehdh%3Fts%3D1571912532000"
+                                    style="width: 0.35in; position: absolute; top:69%; left:7%" alt=""
+                                    class="responsive-img circle"></td>
+                            <td>Chady</td>
+                            <td>chady@gmaily.com</td>
+                            <td>06/20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active blue"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fixed-action-btn">
+            <a href="#personmodal" class="btn-floating btn-large blue modal-trigger">
+                <i class="large material-icons white-text">person_add</i>
+            </a>
+            <div id="personmodal" class="modal">
+                <div class="modal-content">
+                    <h4>Add User</h4>
+                    <div class="input-field">
+                        <input placeholder="Name" type="text" name="" id="">
+                    </div>
+                    <div class="input-field">
+                        <input placeholder="Email" type="email" class="validate">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="footer-copyright center blue white-text">
+            M-Admin Copyright &copy; 2020-2030
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script>
+
+        $('section').hide()
+        $('.posts').hide()
+        $('.users').hide()
+        $('.categories').hide()
+
+        setTimeout(() => {
+            $('section').fadeIn()
+            $('.p').hide()
+        }, 1000)
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.modal').modal();
+            $('.tooltipped').tooltip();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now))
+                    }
+                })
+            })
+            $('form').submit(function (e) {
+                output = `<li class="collection-item">${$('input').val()}<span class="material-icons right del">remove_circle_outline</span></li>`
+                $('.todoss').append(output)
+                e.preventDefault()
+            })
+            $('.todoss').on('click', '.del', function (e) {
+                $(this).parent().remove()
+            })
+            $('.postgo').click(function (e) {
+                $('.home').hide()
+                $('.categories').hide()
+                $('.posts').show()
+                $('.users').hide()
+            })
+            $('.catego').click(function (e) {
+                $('.home').hide()
+                $('.categories').show()
+                $('.posts').hide()
+                $('.users').hide()
+            })
+            $('.usergo').click(function (e) {
+                $('.home').hide()
+                $('.categories').hide()
+                $('.posts').hide()
+                $('.users').show()
+            })
+            $('.dashgo').click(function (e) {
+                $('.home').show()
+                $('.categories').hide()
+                $('.posts').hide()
+                $('.users').hide()
+            })
+        });
+
+    </script>
+</body>
+
+</html>
